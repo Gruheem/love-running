@@ -27,6 +27,10 @@ h3 {
   color: #252525;
 }
 
+.hidden-heading {
+  display: none;
+}
+
 /* header */
 header {
   background-color: #ffffff;
@@ -157,6 +161,31 @@ hr {
   align-items: center;
   justify-content: center;
 }
+
+/* Meet ups Section */
+#times {
+  background: url(../images/dublin-city.webp) no-repeat center/cover;
+  /* Handles responsivity without the need for a media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times h3 {
+  /*overrides the default h3 styles*/
+  color: #fafafa;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /* This will not wrap on screens less than 400 px wide. 
+  Each div will fit to fill the available space on its row */
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
 /* footer */
 #social-networks {
   text-align: center;
