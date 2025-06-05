@@ -266,8 +266,8 @@ hr {
   }
 }
 
-/* Three Column layout for reasons section */
 @media screen and (min-width: 1200px) {
+  /* reasons section */
   #benefits {
     display: flex;
     flex-direction: row;
@@ -277,12 +277,12 @@ hr {
     flex: 1;
   }
 
-  #benefits-physical {
-    order: -1;
-  }
-
   #benefits-image {
     order: 0;
+  }
+
+  #benefits-mental {
+    order: 1;
   }
 
   #benefits-mental > div {
