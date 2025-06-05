@@ -18,7 +18,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -98,7 +100,7 @@ main {
 }
 
 #cover-text {
-  background-color: rgba(241, 109, 107, .7);
+  background-color: rgba(241, 109, 107, 0.7);
   font-size: 130%;
   position: absolute;
   bottom: 30px;
@@ -108,14 +110,15 @@ main {
   padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2,
+#cover-text > h3 {
   color: #ffffff;
 }
 
 /* Reasons to Love Running Section */
 #reasons {
   width: 90%;
-  margin:  20px auto;
+  margin: 20px auto;
 }
 
 #reasons h2 {
@@ -139,7 +142,7 @@ hr {
 }
 
 #circle-cover-bg {
-  background: url(../images/reasons-image.webp) no-repeat top center/cover; 
+  background: url(../images/reasons-image.webp) no-repeat top center/cover;
   height: 90vw;
   width: 90vw;
   margin-bottom: 20px;
@@ -150,7 +153,7 @@ hr {
 }
 
 #benefits-image {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -209,6 +212,22 @@ hr {
     width: 300px;
     right: 50px;
   }
+
+  /* Reasons Section */
+  #benefits-physical, #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #benefits-physical > div, #benefits-mental > div {
+    width: 75%;
+  }
+
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
 }
 
 /* Larger Devices */
@@ -217,3 +236,31 @@ hr {
     border-bottom: 1px solid #3a3a3a;
   }
 }
+
+/* Three Column layout for reasons section */
+@media screen and (min-width: 1200px) {
+  #benefits {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #benefits > div {
+    flex: 1;
+  }
+
+  #benefits-physical {
+    order: -1;
+  }
+
+  #benefits-image {
+    order: 0;
+  }
+
+  #benefits-mental > div {
+    align-self: flex-start;
+  }
+
+  #benefits-physical > div {
+    align-self: flex-end;
+  }
+} 
