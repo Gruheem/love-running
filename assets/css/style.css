@@ -186,6 +186,16 @@ hr {
   flex-grow: 1;
 }
 
+/* Gallery Page */
+#photos img {
+  width: 100%;
+  line-height: 1;
+}
+
+#photo {
+  line-height: 0;
+}
+
 /* footer */
 #social-networks {
   text-align: center;
